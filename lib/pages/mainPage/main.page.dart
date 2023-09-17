@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_test_task/constants/colors.dart';
 import 'package:flutter_test_task/widgets/TabBar/tab_bar.dart';
 
 class MainPage extends StatelessWidget {
@@ -9,20 +10,25 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
           title: Row(
             children: [
-              Text(
-                'Заголовок',
-                style: theme.textTheme.bodyLarge,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Text(
+                  'Заголовок',
+                  style: theme.textTheme.bodyLarge,
+                ),
               )
             ],
           ),
           bottom: PreferredSize(
               preferredSize: const Size.fromHeight(1),
               child: Container(
+                color: bgSecondary,
                 height: 1,
               )),
         ),

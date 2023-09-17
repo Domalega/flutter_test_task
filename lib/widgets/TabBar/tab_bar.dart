@@ -13,26 +13,29 @@ class TabBarWidget extends StatelessWidget {
       children: <Widget>[
         Align(
           alignment: Alignment.topLeft,
-          child: SizedBox(
-            width: MediaQuery.of(context).size.width / 2,
-            child: const TabBar(
-              unselectedLabelColor: Colors.grey,
-              isScrollable: true,
-              labelPadding: EdgeInsets.zero,
-
-              //WHY DOSNT WORK!!!?!??!
-              //labelStyle: theme.textTheme.bodyLarge,
-              labelStyle: TextStyle(
-                  color: bgPrimary, fontWeight: FontWeight.w700, fontSize: 16),
-              tabs: <Widget>[
-                Tab(
+          child: TabBar(
+            unselectedLabelColor: Colors.grey,
+            isScrollable: true,
+            labelPadding: EdgeInsets.zero,
+            labelStyle: const TextStyle(
+              color: bgPrimary,
+              fontWeight: FontWeight.w700,
+              fontSize: 16,
+            ),
+            tabs: <Widget>[
+              Container(
+                margin: const EdgeInsets.only(right: 10),
+                child: const Tab(
                   child: Text('Вкладка 1'),
                 ),
-                Tab(
+              ),
+              Container(
+                margin: const EdgeInsets.only(left: 10),
+                child: const Tab(
                   child: Text('Вкладка 2'),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         const Expanded(
@@ -40,7 +43,7 @@ class TabBarWidget extends StatelessWidget {
             padding: EdgeInsets.only(top: 20),
             child: TabContent(),
           ),
-        )
+        ),
       ],
     );
   }
