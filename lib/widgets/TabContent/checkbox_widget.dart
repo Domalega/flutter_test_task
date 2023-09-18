@@ -85,7 +85,7 @@ class CheckboxCreator extends StatelessWidget {
         Text(
           name,
           style: theme.textTheme.bodySmall,
-        )
+        ),
       ],
     );
   }

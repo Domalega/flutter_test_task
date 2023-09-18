@@ -9,12 +9,13 @@ final mainTheme = ThemeData(
   indicatorColor: accentColor,
   unselectedWidgetColor: bgSecondary,
   textTheme: const TextTheme(
-      bodyLarge: TextStyle(
-          color: textPrimary, fontWeight: FontWeight.w700, fontSize: 18),
-      bodyMedium: TextStyle(
-          color: textPrimary, fontWeight: FontWeight.w700, fontSize: 16),
-      bodySmall: TextStyle(
-          color: textPrimary, fontWeight: FontWeight.w400, fontSize: 14),
-      titleMedium: TextStyle(color: textPrimary),
-      labelMedium: TextStyle(color: bgPrimary)),
+    bodyLarge: TextStyle(
+        color: textPrimary, fontWeight: FontWeight.w700, fontSize: 18),
+    bodyMedium: TextStyle(
+        color: textPrimary, fontWeight: FontWeight.w700, fontSize: 16),
+    bodySmall: TextStyle(
+        color: textPrimary, fontWeight: FontWeight.w400, fontSize: 14),
+    titleMedium: TextStyle(color: textPrimary),
+    labelMedium: TextStyle(color: bgPrimary),
+  ),
 );
